@@ -1,0 +1,349 @@
+/* Import all partial scss */
+@import 'variable';
+@import 'mixin';
+@import 'base';
+/* End of import all partial scss */
+
+
+/* Start header */
+#header{
+	background: url('../images/section-bg/header-bg.png') no-repeat fixed center center / cover;
+	.bg-light {
+		background-color: transparent !important;
+	}
+	.jumbotron {
+		background-color: transparent;
+		padding: 10rem 0rem 12rem;
+	}
+}
+.main-navbar{
+	.navbar-nav{
+		.nav-link{
+			color: $light-color;
+			font-size: 27px;
+			&:hover{
+				color: $light-color;
+			}
+		}
+	}
+}
+.my-jumbotron{
+	h1{
+		color: $light-color;
+		font-size: 120px;
+		font-family: 'Baumans', cursive;
+		font-weight: bold;
+	}
+	hr{
+		width: 390px;
+		background: $light-color;
+		height: 3px;
+		margin: 0 auto;
+	}
+	p{
+		a{
+			font-size: 27px;
+			font-weight: normal;
+			color: $light-color;
+			margin: 0 15px;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}
+/* End of header */
+
+
+/* Start about us */
+#about-us{
+	background: $light-color;
+	.about-us-left{
+		h1{
+			font-size: 45px;
+			color: $dark-color;
+		}
+		p{
+			font-size: 18px;
+		}
+	}
+	.about-social{
+		padding-top: 15px;
+		p{
+			a{
+				i{
+					font-size: 50px;
+					margin: 0 20px;
+					color: $dark-color;
+					@include trans(0.3s);
+				}
+			}
+			&:nth-child(1){
+				a{
+					i{
+						color: #3b5998;
+					}
+				}
+			}
+			&:nth-child(2){
+				a{
+					i{
+						color: #00aced;
+					}
+				}
+			}
+			&:nth-child(3){
+				a{
+					i{
+						color: #517fa4;
+					}
+				}
+			}
+			&:nth-child(4){
+				a{
+					i{
+						color: #ff0084;
+					}
+				}
+			}
+			&:nth-child(5){
+				a{
+					i{
+						color: #007bb6;
+					}
+				}
+			}
+		}
+	}
+}
+/* End of about us */
+
+
+/* Start progress */
+#progress{
+	background: url('../images/section-bg/skill_set.jpg') no-repeat fixed center center / cover;
+	.same-progress {
+		height: 200px;
+		width: 200px;
+		border: 2px solid $hover-color;
+		border-radius: 50%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		h2{
+			color: $light-color;
+			font-size: 35px;
+		}
+	}
+	.row{
+		.col-lg-3{
+			h4{
+				color: $light-color;
+				font-size: 25px;
+			}
+		}
+	}
+
+}
+/* End of progress */
+
+
+/* Start service */
+#service{
+	background: $light-color;
+	.section-header{
+		h1{
+			color: $dark-color;
+		}
+		p{
+			color: $dark-color;
+		}
+	}
+	.same-service{
+		.service-icon {
+			i{
+				font-size: 50px;
+				border: 2px solid $dark-color;
+				padding: 25px;
+				border-radius: 50%;
+				color: $dark-color;
+				@include trans(0.3s);
+			}
+		}
+		h3{
+			font-size: 30px;
+			color: $dark-color;
+		}
+		p{
+			font-size: 17px;
+			color: $dark-color;
+		}
+		&:hover{
+			.service-icon{
+				i{
+					border-color: $hover-color;
+					color: $hover-color;
+				}
+			}
+		}
+	}
+}
+/* End of service */
+
+
+/* Start portfolio */
+#portfolio{
+	background: url('../images/section-bg/portfolio.jpg') no-repeat fixed center center / cover;
+	.overlay{
+		background: rgba(240,140,83, 0.9);
+	}
+	.card {
+		border: 0;
+		margin: 10px 0px 0px 10px;
+	}
+	.filter-card{
+		margin-left: -30px
+	}
+	.filter-nav{
+		.nav-item{
+			.active{
+				color: $light-color;
+			}
+		}
+		margin: 0 80px;
+		.nav-link{
+			color: #ffd6bf;
+			font-size: 30px;
+			@include trans(0.3s);
+			&:hover{
+				color: $light-color;
+			}
+		}
+	}
+}
+/* End of portfolio */
+
+
+/* Start blog */
+#blog{
+	background: $light-color;
+	.section-header{
+		h1{
+			color: $dark-color;
+		}
+	}
+	.card{
+		background: transparent;
+		.card-img-top {
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+		}
+		.card-body{
+			h2{
+				font-size: 25px;
+				color: $dark-color;
+			}
+			small{
+				font-size: 15px;
+				color: $dark-color;
+				span{
+					color: $hover-color;
+				}
+			}
+			p{
+				color: $dark-color;
+				font-size: 15px;
+			}
+		}
+	}
+	.custom-btn-lg{
+		padding: 5px 0;
+		color: $hover-color;
+		border-color: $hover-color;
+		&:hover{
+			color: $light-color;
+		}
+	}
+}
+/* End of blog */
+
+
+/* Start contact */
+#contact{
+	background: url('../images/section-bg/contact-bg.jpg') no-repeat fixed center center / cover;
+	.overlay {
+		background: rgba(0, 0, 0, 0.6);
+	}
+	.address{
+		h1{
+			font-size: 35px;
+			color: $light-color;
+		}
+		P{
+			font-size: 25px;
+			color: $light-color;
+		}
+	}
+	.media{
+		i{
+			font-size: 50px;
+			border: 2px solid $light-color;
+			border-radius: 50%;
+			height: 100px;
+			width: 100px;
+			color: $light-color;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 20px;
+		}
+		.media-body{
+			p{
+				color: $light-color;
+				font-size: 20px;
+			}
+			small{
+				font-size: 20px;
+				color: $light-color;
+			}
+		}
+	}
+	.my-form{
+		.form-control {
+			padding: .75rem .75rem;
+			color: $light-color;
+			background-color: transparent;
+			border: 1px solid $light-color;
+			border-radius: 0px;
+			cursor: pointer;
+			&:focus{
+				box-shadow: none;
+			}
+		}
+	}
+}
+/* End of contact */
+
+
+/* Start google map */
+#google-map {
+	margin-bottom: -8px;
+}
+/* End of google map */
+
+
+/* Start footer */
+#footer{
+	background: $hover-color;
+	p{
+		margin-bottom: 0rem;
+		color: $light-color;
+		font-size: 20px;
+	}
+}
+/* End of footer */
+
+
+/* Import reponsive scss  */
+@import 'responsive';

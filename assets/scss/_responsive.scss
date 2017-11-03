@@ -1,0 +1,65 @@
+@media only screen and (max-width: 991px){
+	#header .jumbotron {
+		padding: 5rem 0rem 9rem;
+	}
+	.navbar-light .navbar-toggler {
+	    background: $light-color;
+	}
+	#portfolio .card {
+	    max-width: 31%;
+	}
+	#portfolio .filter-nav {
+	    margin: 0 10px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.sec-pad{
+		padding: 60px 0;
+	}
+	.my-jumbotron h1 {
+	    font-size: 75px;
+	}
+	#header .jumbotron {
+	    padding: 5rem 0rem 8rem;
+	}
+	.my-jumbotron h1 {
+	    font-size: 50px;
+	}
+	.my-jumbotron hr {
+	    max-width: 250px;
+	    height: 2px;
+	    margin: 0 auto;
+	}
+	.my-jumbotron p a {
+		font-size: 18px;
+	}
+	.about-social p{
+		margin: 0 -10px;
+	}
+	#portfolio .card {
+	    max-width: 45%;
+	}
+}
+@media only screen and (max-width: 520px){
+	.my-jumbotron p a {
+		font-size: 15px;
+	}	
+	.about-social p{
+		margin: 0 -15px;
+	}
+	#header .jumbotron {
+		padding: 3rem 0rem 5rem;
+	}
+}
+@media only screen and (max-width: 302px){
+	.my-jumbotron p a {
+		font-size: 12px;
+	}
+	.my-jumbotron h1 {
+		font-size: 35px;
+	}
+	#header .jumbotron {
+		padding: 3rem 0rem 5rem;
+	}
+}
+/* End of all responsive */

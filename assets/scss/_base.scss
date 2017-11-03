@@ -1,0 +1,44 @@
+/* Default css */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-size: 16px;
+	font-family: 'Mate', serif;
+	background: #dddddd;
+}
+.sec-pad{
+	padding: 100px 0;
+}
+.overlay{
+	background: rgba(0,0,0,0.3);
+}
+.section-header{
+	h1{
+		font-size: 45px;
+		color: $light-color;
+		font-family: 'Mate', serif;
+	}
+	p{
+		font-size: 20px;
+		color: $light-color;
+		font-family: 'Mate', serif;
+	}
+}
+.custom-btn{
+	color: $dark-color;
+	font-size: 30px;
+	border: 1px solid $dark-color;
+	padding: 2px 10px;
+	@include trans(0.3s);
+	&:hover{
+		color: $light-color;
+		background: $hover-color;
+		border-color: $hover-color;
+	}
+}
